@@ -27,7 +27,7 @@ instance/
 # --- Machine Learning Specific ---
 # Your trained models - these are often too large for GitHub
 # This is the most important line for your project
-/models/
+# /models/
 
 # --- IDE and OS Specific ---
 # Visual Studio Code
