@@ -1,7 +1,3 @@
-# Animal-Type-Classification-for-cattle-and-buffaloes
-Here’s a complete `README.md` template for your Flask-based Cattle/Buffalo classification project, including setup and production deployment instructions.
-
-***
 
 # Animal-Type-Classification-for-Cattle-and-Buffaloes
 
