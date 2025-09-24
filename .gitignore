@@ -1,0 +1,40 @@
+# --- Python Specific ---
+# Compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+/venv/
+.venv/
+env/
+
+# Distribution and packaging
+*.egg-info/
+build/
+dist/
+
+# Logs and temporary files
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Flask Specific ---
+# Flask instance folder (if not in a virtual environment)
+# This is for configuration files that should not be committed
+instance/
+
+# --- Machine Learning Specific ---
+# Your trained models - these are often too large for GitHub
+# This is the most important line for your project
+/models/
+
+# --- IDE and OS Specific ---
+# Visual Studio Code
+.vscode/
+
+# macOS files
+.DS_Store
+
+# Windows files
+Thumbs.db

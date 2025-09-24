@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container result-page">
+        <h1>Classification Result</h1>
+
+        {% if data.error %}
+            <div class="error-message">
+                <p>{{ data.message }}</p>
+            </div>
+            <a href="/" class="back-button">Go Back</a>
+        {% else %}
+            <div class="result-card">
+                <div class="image-container">
+                    <img src="{{ data.image_data }}" alt="Uploaded Image">
+                </div>
+                <div class="details">
+                    <p><strong>File Name:</strong> {{ data.filename }}</p>
+                    <p><strong>Predicted Breed:</strong> <span class="highlight">{{ data.breed }}</span></p>
+                    <p><strong>Animal Type:</strong> <span class="highlight">{{ data.type }}</span></p>
+                    <p><strong>Confidence:</strong> <span class="highlight-score">{{ data.confidence }}</span></p>
+                </div>
+            </div>
+            <a href="/" class="back-button">Classify Another Image</a>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Cattle Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container welcome-page">
+        <h1>🐄 AI-Powered Bovine Classification 🐃</h1>
+        <p>Upload an image of a cow or buffalo to instantly classify its breed.</p>
+        
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <div class="upload-area">
+                <p>Drag and drop an image here or</p>
+                <input type="file" name="file" id="file-input" required accept="image/*">
+                <label for="file-input" class="upload-button">Browse File</label>
+            </div>
+            
+            <button type="submit" class="classify-button">Classify Image</button>
+        </form>
+    </div>
+</body>
+</html>
